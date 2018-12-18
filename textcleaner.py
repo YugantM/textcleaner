@@ -4,7 +4,7 @@
 # In[67]:
 
 
-import re,string
+import regex as re,string
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords 
