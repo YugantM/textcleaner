@@ -46,7 +46,7 @@ REGEX :
 ```sh
 pip install regex
 ```
-REGEX : 
+textcleaner : 
 
 ```sh
 pip install textcleaner
