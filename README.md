@@ -28,8 +28,8 @@ Text-Cleaner is a utility library for text-data pre-processing. Use it before pa
 
 textcleaner uses a number of open source projects to work properly:
 
-* [NLTK](https://www.nltk.org/) - for advanced cleaning
-* [REGEX](https://pypi.org/project/regex/) - for regular expression
+- [NLTK](https://www.nltk.org/) - for advanced cleaning
+- [REGEX](https://pypi.org/project/regex/) - for regular expression
 
 And of course textcleaner itself is open source with a [public repository](https://github.com/YugantM/textcleaner)
  on GitHub.
