@@ -40,13 +40,13 @@ textcleaner requires [Python 3.x](https://www.python.org/downloads/) to run.
 
 Install the dependencies.
 
-NLTK : steps to install [[documentation](https://www.nltk.org/install.html)]
-REGEX : 
+-NLTK : steps to install [[documentation](https://www.nltk.org/install.html)]
+-REGEX : 
 
 ```sh
 pip install regex
 ```
-textcleaner : 
+-textcleaner : 
 
 ```sh
 pip install textcleaner
