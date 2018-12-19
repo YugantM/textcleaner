@@ -1,2 +1,65 @@
-# textcleaner
-text-data pre-processing utility
+# textcleaner V0.3
+
+
+Text-Cleaner is a utility library for text-data pre-processing. Use it before passing the text data to a model.
+
+
+# Features!
+  - main_cleaner to do all the below in one call !
+  or
+  - remove unnecessary blank lines
+  - stip out a perticular character or default one 
+  - transfer all characters to lowercase if needed
+  - remove numbers, symblos and stop-words from the whole text
+  - tokenize the text-data on one call
+  - stemming & lemmatization powered by NLTK
+  
+
+> The goal is to make basic cleaning of data hassle free.
+> Most of the developers who are working with text data have 
+> faced this situation where data is not consumable
+> and they end up wasting their time on these issues
+> rather than fine tunning the model and get better accuracy.
+> In that scenario this library can be useful and save you a tone
+> of time.
+
+
+### Tech
+
+textcleaner uses a number of open source projects to work properly:
+
+* [NLTK](https://www.nltk.org/) - for advanced cleaning
+* [REGEX](https://pypi.org/project/regex/) - for regular expression
+
+And of course textcleaner itself is open source with a [public repository](https://github.com/YugantM/textcleaner)
+ on GitHub.
+
+### Installation
+
+textcleaner requires [Python 3.x](https://www.python.org/downloads/) to run.
+
+Install the dependencies.
+
+NLTK : steps to install [[documentation](https://www.nltk.org/install.html)]
+REGEX : 
+
+```sh
+pip install regex
+```
+
+
+### Todos
+
+ - more advanced features
+ - ability to read more formats rather than only .txt
+
+License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
+
+
+   
