@@ -46,7 +46,22 @@ REGEX :
 ```sh
 pip install regex
 ```
+REGEX : 
 
+```sh
+pip install textcleaner
+```
+or
+```sh
+pip install textcleaner==0.3
+```
+### Usage
+
+```sh
+import textcleaner as tc
+tc.main_cleaner('<FILE_NAME>')
+```
+Above command will convert the text file into list of words with cleaning. Default response of the function is list of list use *op* argument and set it to 'words' and you will get a flat list of words.
 
 ### Todos
 
