@@ -94,6 +94,6 @@ def main_cleaner(file,op = 'sents'):
     if op== 'words':
         return [word for sent in part2 for word in sent]        
     
-    if op != 'sents' or 'words':
+    if op not in ('sents','words'):
         return "value of option is not valid, try 'sents' or 'words' instead" 
 
