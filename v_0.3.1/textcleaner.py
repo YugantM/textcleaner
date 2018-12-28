@@ -10,9 +10,6 @@ lemmatizer=WordNetLemmatizer()
 import os.path
 
 
-# In[132]:
-
-
 # checks whether it has file path as argument
 def file_or_not(arg):
     if os.path.isfile(arg):
