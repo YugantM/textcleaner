@@ -57,7 +57,7 @@ pip install textcleaner==0.3
 ```
 ### Usage
 
-```sh
+```python
 import textcleaner as tc
 tc.main_cleaner('<FILE_NAME>')
 ```
