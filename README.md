@@ -1,4 +1,4 @@
-# textcleaner V0.3
+# textcleaner V0.4.6
 
 
 Text-Cleaner is a utility library for text-data pre-processing. Use it before passing the text data to a model.
@@ -53,13 +53,15 @@ pip install textcleaner
 ```
 or
 ```sh
-pip install textcleaner==0.3
+pip install textcleaner==0.4.6
 ```
 ### Usage
 
 ```python
 import textcleaner as tc
 tc.main_cleaner('<FILE_NAME>')
+#or
+tc.document('<FILE_NAME>')
 ```
 Above command will convert the text file into list of words with cleaning. Default response of the function is list of list use *op* argument and set it to 'words' and you will get a flat list of words.
 
