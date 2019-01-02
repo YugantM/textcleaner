@@ -38,7 +38,7 @@ And of course textcleaner itself is open source with a [public repository](https
 
 textcleaner requires [Python 3.x](https://www.python.org/downloads/) to run.
 
-Install the dependencies.
+Install the dependencies if you have not already installed it!
 
 - NLTK : steps to install [[documentation](https://www.nltk.org/install.html)]
 - REGEX : 
