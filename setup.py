@@ -1,10 +1,13 @@
-
-# coding: utf-8
-
-# In[ ]:
-
-
 from distutils.core import setup
+from setuptools.command.install import install as _install
+
+class Install(_install):
+    def run(self):
+        _install.do_egg_install(self)
+        import nltk
+        nltk.download("stopwords")
+
+
 setup(
   name = 'textcleaner',         # How you named your package folder (MyLib)
   packages = ['textcleaner'],   # Chose the same as "name"
@@ -16,11 +19,14 @@ setup(
   url = 'https://github.com/YugantM',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/YugantM/textcleaner/archive/V0.1.tar.gz',    # I explain this later on
   keywords = ['MEANINGFULL', 'NLP', 'DATASCIENCE','DATACLEANING','PREPROCESSING'],   # Keywords that define your package best
+  cmdclass={'install': Install},
+  
   install_requires=[            # I get to this in a second
           'NLTK',
           'regex',
           'string'
       ],
+  setup_requires=['nltk'],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      # Define that your audience are developers
