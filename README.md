@@ -1,4 +1,4 @@
-# textcleaner V0.4.13
+# textcleaner V0.4.23
 
 
 Text-Cleaner is a utility library for text-data pre-processing. Use it before passing the text data to a model.
@@ -53,7 +53,7 @@ pip install textcleaner
 ```
 or
 ```sh
-pip install textcleaner==0.4.13
+pip install textcleaner==0.4.23
 ```
 ### Usage
 
