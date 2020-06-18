@@ -1,6 +1,6 @@
 # textcleaner V0.4.23
 
-
+Pypi address: [hyperlink](https://pypi.org/project/textcleaner/)
 Text-Cleaner is a utility library for text-data pre-processing. Use it before passing the text data to a model.
 
 
