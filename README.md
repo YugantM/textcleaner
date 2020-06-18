@@ -1,4 +1,4 @@
-# textcleaner V0.4.23
+# textcleaner V0.4.26
 
 Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
 Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
