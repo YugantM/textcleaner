@@ -1,4 +1,4 @@
-# textcleaner V0.4.26
+# textcleaner V0.4.26 [![Downloads](https://static.pepy.tech/personalized-badge/textcleaner?period=total&units=international_system&left_color=blue&right_color=green&left_text=Downloads)](https://pepy.tech/project/textcleaner)
 
 Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
 Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
