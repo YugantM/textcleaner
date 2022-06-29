@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="language" content="English">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="TextCleaner is an open source, MIT licenced library for text data pre-processing.
+    Ready to make the text cleaning hassle free.">
+    <meta name="og:title" property="og:title" content="testcleaner 0.4.26">
+    <meta name="og:description" property="og:description" content="TextCleaner is an open source, MIT licenced library for text data pre-processing.    Ready to make the text cleaning hassle free.">
+    <meta property="og:image" content="https://github.com/YugantM/yugantm.github.io/blob/master/textcleaner/logo.svg" />
+    <link href="https://pandas.pydata.org/" rel="canonical">
+    <link href="https://pypi.org/project/textcleaner/" rel="canonical">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <meta name="keywords" content="documentation,data cleaning,nlp,data preprocessing,text data,data cleaning techniques,
+data cleaning in python,
+data cleaning steps,
+data cleaning process,
+data cleaning in data mining,
+data cleaning service,
+data cleaning for research,
+data cleaning example,
+data cleaning pdf,
+database data cleaning,
+data cleaning best practices,
+data cleaning guidelines,">
+    <meta name="author" content="Yugant Hadiyal">
+    <title>TextCleaner | Documenation</title>
+    <link rel="icon" type="image/icon" href="logo_mini.png">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id='header'>
+
+    <h6><a traget="_blank" href="https://pypi.org/project/textcleaner/" id='logo' style="text-decoration:none;color:black;">TextCleaner <span class="badge badge-secondary">0.4.26</span></h6></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="documentation.html">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="downloads.html">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
+<div class="container" >
+    <div clas="row" style="height:230px;">
+      <div class="col-sm-4" style="display:inline-block;padding:0px;"><img src='logo.svg' height='300px'></div>
+      <div class="col-sm-7" style="display:inline-block;padding:0px">
+          <p>
+            <h2>Text Data Cleaning Library</h2>
+            TextCleaner is an open source, <a href="license.txt">MIT licenced</a> library for text data pre-processing.</br>
+            Ready to make the text cleaning hassle free.
+          </p>
+          <a href="https://pypi.org/project/textcleaner/#files" traget="blank"><button type="button" class="btn btn-success" style="display:inline-block;">Download Zip</button></a>
+          <div class="install" style="display:inline-block;" id='cont'>pip install textcleaner</div>
+          <button class="copy" data-clipboard-target="#cont"></button>
+      </div>
+    </div>
+<hr >
+    <center><h3 style="margin:20px;text-shadow: 0px 0px 1px rgba(28,110,164,0.43);"> Documenation </h3>
+  <div clas="row">
+
+<p class="motto" style="text-align:center;"> The following documentation is for v 0.4.26</p>
+    </center>
+  </div>
+<hr>
+
+
+      <center><h3 style="margin:20px;text-shadow: 0px 0px 1px rgba(28,110,164,0.43);"> Index </h3></center>
+      <ul class='index'>
+          <a href="#introduction" alt=""><li>1. Introduction</li></a>
+          <a href="#installation" alt=""><li>2. Installation</li></a>
+          <a href="#bfunctions" alt=""><li>3. Built-in functions</li></a>
+          <a href="#bclasses" alt=""><li>4. Built-in Classes</li></a>
+          <a href="#updates" alt=""><li>5. Future updates</li></a>
+          <a href="#report" alt=""><li>6. How to report</li></a>
+      </ul>
+
+<hr>
+      <center><h3 style="margin:20px;text-shadow: 0px 0px 1px rgba(28,110,164,0.43);"> Content </h3></center>
+    <div class="doc_content" id="introduction">
+      <h4> Introduction</h4>
+      The "textcleaner" library contains several different types of components.<br/><br/>
+      It contains some built-in functions to handle and operate text-data. It may also handle
+      numbers but doing so is not advisable. The library have some dependencies which includes some other open-source
+      libraries like NLTK,REGEX and default library string. <br/><br/>
+      Some modules are set to the private and bounded through configuration to limit its uasage.
+      These modules are defined to help other functions communicate with each other. Though you can use other modules
+      freely which are mentioned in the documentation under <a href="#bfunctions">built-in functions</a>.
+      All those functions can be called individually or in combinations. </br> </br>
+      Development of this library is not funded by any organization. This project is created and maintained by
+      individuals who want to contribute to the open-source community. <br/>
+      Kindly visit this link <a href="https://pypi.org/project/textcleaner/">pypi.org/project/textcleaner</a>.
+
+    </div>
+<hr>
+    <div class="doc_content" id="installation">
+  <h4> Installation</h4>
+      <h5>For windows & Linux:</h5>
+      <div class="console" id='consol' >pip install textcleaner</div>
+      <button class="copy" data-clipboard-target="#consol"></button>
+      <br/><br/>
+      <h5>For updating:</h5>
+      <div class="console" id='consol2' >pip install textcleaner --upgrade</div>
+      <button class="copy" data-clipboard-target="#consol2"></button>
+      <br/><br/>
+      <h5>Before importing:</h5>
+      <p>If you have not downloaded the stopwords from <strong>nltk</strong> it will ask you to download while importing it.<br/>
+      To avoid that, write following in the command prompt.</p>
+      <div class="console" id='consol' >python <br/>&gt&gt&gt import nltk <br/>&gt&gt&gt nltk.download('stopwords')</div>
+      <br/>
+
+      <i style="font-size:15px;">Aim is to remove dependecies as much as possible in the later versions.</i>
+    </div>
+  <hr>
+    <div class="doc_content" id="bfunctions">
+  <h4> Built-in functions</h4>
+      <p>All functions are able to read file. They also supports list of string or the class object. Functions can be called
+      in chain with object or individually. Read <a href="#notes">notes</a> under usage section before diving in.</p>
+      <p>Here is the list of all the functions from the library:</p>
+      <ul class='subindex'>
+          <a href="#clear_blank_lines" alt=""><li>clear_blank_lines</li></a>
+          <a href="#copy" alt="copy"><li>copy</li></a>
+          <a href="#lemming" alt=""><li>lemming</li></a>
+          <a href="#lower_all" alt=""><li>lower_all</li></a>
+          <a href="#main_cleaner" alt=""><li>main_cleaner</li></a>
+          <a href="#remove_numbers" alt=""><li>remove_numbers</li></a>
+          <a href="#remove_stpwrds" alt=""><li>remove_stpwrds</li></a>
+          <a href="#remove_symbols" alt=""><li>remove_symbols</li></a>
+          <a href="#stemming" alt=""><li>stemming</li></a>
+          <a href="#strip_all" alt=""><li>strip_all</li></a>
+          <a href="#token_it" alt=""><li>token_it</li></a>
+      </ul>
+
+      <br>
+      <h5>Usage:</h5>
+      <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span> <span id='r'>&#35;or</span><br>
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> <span id='r'>&#35;or</span><br>
+          <span id='o'>&gt&gt&gt</span> <span id='g'>from</span> <span id='b'>textcleaner</span> <span id='g'>import</span> <span id='b'>*</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(&ltfile_name&gt)
+      </div>
+      <div id="notes">
+      <h5 style="background-color: white;"><span id='r'>Notes:</span></h5>
+      <ul>
+      <li><i>data is an object of <a href="#bclasses">document class</a>. data is used as an <b>example</b> for the documentation.</i><br></li>
+      <li><i><b>inplace</b> argument is defined to set the nature of the operation of the object.<br> Default argument is <b>inplace = False</b> which means before the operation, the function will
+        generate a copy of the object, return the replica and keeping original data unchanged. <br>The other option is <b>inplace = True</b> which means do the operation on the object and return it. </i></li>
+      <li><b>token_it</b> function is an exception for chain calling because it returns tokens and its format is not supported by rest of the functions. Call this function
+      after all the cleaning if tokens need to be generated.</li>
+    </ul>
+    </div><br>
+
+      <h5 id="clear_blank_lines"> clear_blank_lines( )</h5>
+      clear_blank_lines is capable of removing all the blank lines from the text-data.
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,inplace=false)</span>
+          <br> y = tc.clear_blank_lines(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.clear_blank_lines()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> This is a sample text<br><br><br>
+          with blank lines in it. Call the function and remove them.</p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> data.clear_blank_lines()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p> This is a sample text<br>
+          with blank lines in it. Call the function and remove them.</p>
+        </div>
+      </div>
+
+<br>
+      <h5 id="copy"> copy( )</h5>
+      copy function is created to make duplicate of the object.
+      <div class="descript" >
+          <span id='r'>&#35;definition: copy(self,inplace=false)</span>
+          <br> y = tc.textcleaner.copy(&ltdocument_object&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.copy()
+      </div>
+      <div class="example">
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> duplicate = data.copy()
+        </div>
+      </div>
+<br>
+      <h5 id="lemming"> lemming( )</h5>
+      lemming executes lemmatization. Lemmatization usually refers to doing things properly with the use of a
+      vocabulary and morphological analysis of words, normally aiming to remove inflectional endings only and
+      to return the base or dictionary form of a word, which is known as the <i>lemma</i>.
+      <a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html">[source]</a>
+      <br><br>
+      <p>lemming will convert words to lemma with the help of the vocabulary. This library uses lemmatization method from
+        NLTK.
+      <div class="descript" >
+          <span id='r'>&#35;definition: lemming(self,inplace=false)</span>
+          <br> y = tc.lemming(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.lemming()
+      </div>
+
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> Root words are great.<br>It helps to summarize the articles or something.<br>
+          </p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> tc.document(sample_text).lemming() <span id='r'>&#35;chain calling<span>
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p>Root word are great.<br>It help to summarize the article or something. </p>
+        </div>
+        <div class="footnote"> you can see conversions like: words to <b>word</b>, helps to <b>help</b>, articles to <b>article</b></div>
+      </div>
+<br>
+      <h5 id="lower_all"> lower_all( )</h5>
+      lower_all sets all the characters of the text-data to lowercase. Which is desirable in most scenarios of
+      text-data cleaning and further processing.
+      <div class="descript" >
+          <span id='r'>&#35;definition: lower_all(self,inplace=false)</span>
+          <br> y = tc.lower_all(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.lower_all()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> In SoMe Cases we MighT geT the data Like tHis.<br>
+          </p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> tc.document(sample_text).lower_all()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p>in some cases we might get the data like this.</p>
+        </div>
+      </div>
+
+<br>
+      <h5 id="main_cleaner"> main_cleaner( )</h5>
+      main_cleaner implements all the cleaning methods in one call. It may take a bit to execute but
+      processes data in a manner where user can pass the text data and it will return a fully cleaned and consumable
+      data.
+      <br><br>
+      This function has one editional argument <b>op</b>. Default value of <b>op</b> is <i>'sents'</i> which means
+      the function will return list of sentences. Other value is <i>'words'</i> which means the function will return
+      a flat list of words from the data.
+      <br><br>
+      main_cleaner does not implement <b>token_it</b>.
+      <div class="descript" >
+          <span id='r'>&#35;definition: main_cleaner(self,op='sents',inplace=false)</span>
+          <br> y = tc.main_cleaner(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.main_cleaner()
+      </div>
+
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> This is a SamPle tExt.WiTh blank spaces&nbsp &nbsp &nbsp , With symbols like %^(#,<br><br><br>
+          with blank lInes iN it. CaLl the fuNctions aNd reMoVe them.</p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> data.main_cleaner()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p> sample text with blank space symbol like<br>
+            blank line call function remove</p>
+        </div>
+        </div>
+
+<br>
+      <h5 id="remove_numbers"> remove_numbers( )</h5>
+      remove_numbers uses regular expression to detect the numbers in the data and removes it.
+      <div class="descript" >
+          <span id='r'>&#35;definition: remove_numbers(self,inplace=false)</span>
+          <br> y = tc.remove_numbers(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.remove_numbers()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> name of the variables can not be initiated by numbers like : 007bond, 88myfunction</p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> data.remove_numbers()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p> name of the variables can not be initiated by numbers like : bond, myfunction</p>
+        </div>
+        </div>
+
+<br>
+      <h5 id="remove_stpwrds"> remove_stpwrds( )</h5>
+      remove_stpwrds removes stopwords from the text with the help of NLTK stopswords vocabulary.
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,inplace=false)</span>
+          <br> y = tc.remove_stpwrds(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.remove_stpwrds()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p>This is a simple statement containing the stopwords.</p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> data.remove_stpwrds()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p> This simple statement containing stopwords.</p>
+        </div>
+        <div class="footnote"> removed stopwords: <b>is</b>, <b>a</b> and <b>the</b></div>
+        </div>
+
+<br>
+      <h5 id="remove_symbols"> remove_symbols( )</h5>
+      remove_symbols uses REGEX to clear punctuations from the text-data.
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,inplace=false)</span>
+          <br> y = tc.remove_symbols(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.remove_symbols()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p>Oh! punctuations like # and @ are so normal in $ocialmedia data.</p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> data = tc.document(sample_text)
+          <br><span id='o'>&gt&gt&gt</span> data.remove_symbols()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p> Oh punctuations like  and  are so normal in ocialmedia data</p>
+        </div>
+            <div class="footnote"> removed punctuations: <b>!</b>, <b>#</b>, <b>@</b>, <b>$</b>and <b>.</b></div>
+        </div>
+<br>
+      <h5 id="stemming"> stemming()</h5>
+      stemming uses SnowBall Stemmer from NLTK library to convert words to their respective root word.
+      <a href="http://www.nltk.org/howto/stem.html">[source]</a>
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,inplace=false)</span>
+          <br> y = tc.stemming(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.stemming()
+      </div>
+
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p> Root words are great.It helps to summarize the articles or something.<br>
+          </p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> tc.document(sample_text).stemming()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p>root word are great.it help to summar the articl or something.</p>
+        </div>
+        <div class="footnote"> Stemming uses rules instead of dictionary of words to convert words to their root words. This affects the spelling of some words. Use <a href="#lemming">lemmatization</a> if spelling is important.</div>
+      </div>
+<br>
+      <h5 id="strip_all"> strip_all( )</h5>
+      strip_all strips off '.\n' from each line of the file. Moreover it also clears unnecessary whitespace from the text as well
+      with help of REGEX.
+      <br><br>
+      It also has one argument <b>x</b> with default value of '.\n' which can be changed as per the user's requirement.
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,x='.\n',inplace=false)</span>
+          <br> y = tc.strip_all(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.strip_all()
+      </div>
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p>This is the first &nbsp;&nbsp; statement.<br>This &nbsp; is a &nbsp;&nbsp;second statement.<br>
+          </p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> tc.document(sample_text).stemming()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p>This is the first statement <br>This is a second statement</p>
+        </div>
+        <div class="footnote"> strip_all strips extra whitespaces too</div>
+      </div>
+
+<br>
+      <h5 id="token_it"> token_it( )</h5>
+      token_it tokenizes the data. It is an inplace operation by default and can not be changed by argument.
+      These tokens are stored into class in different variable named <b>'tokens'</b>.
+      <a href="https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html">[source]</a>
+      <div class="descript" >
+          <span id='r'>&#35;definition: clear_blank_lines(self,inplace=false)</span>
+          <br> y = tc.token_it(&ltfile_name&gt)
+          <br><span id='r'>&#35;or</span>
+          <br>y = data.token_it()
+      </div>
+
+      <div class="example">
+        <div class="heading">sample_text:</div>
+        <div class="sample">
+          <p>All dogs were wild but after long period of taming now they are domestic pets.<br>
+          </p>
+        </div>
+        <div class="heading">Code:</div>
+        <div class="python_box">
+          <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+          <br><span id='o'>&gt&gt&gt</span> tc.document(sample_text).token_it()
+        </div>
+        <div class="heading">Output:</div>
+        <div class="output">
+          <p>[['All','dogs','were','wild','but','after','long','period','of','taming',<br>'now','they','are','domestic','pets','.']]</p>
+        </div>
+      </div>
+
+
+    </div>
+<hr>
+    <div class="doc_content" id="bclasses">
+  <h4 style="display:inline-flex;"> Built-in Classes</h4>
+  <h5 id="token_it">i) corpus:</h5>
+  corpus class contains metadata of the folder in variables. It has some well defined <b>default methods</b> and
+  it also has built-in functions listed below in the class structure.<br><br>
+  <div class="example">
+    <div class="heading">class structure</div>
+
+    <div class="sample" >
+      <p><span id='b'>class</span> corpus:
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='r'>&#35;class variables</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">root: <span id='o'>"&ltfolder_path&gt"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">files = <span id='o'>"list of files in the folder"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">data = <span id='o'>"this variable contains data"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">total_sentences = <span id='o'>"no of sentences of the corpus"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">total_words = <span id='o'>"count of words of the corpus"</span></i>
+      </p>
+    </div>
+  </div>
+  <br>Default methods are written to make class more accessible. These make the object user-friendly. Read the object-usage below.<br><br>
+  <h5 id="object_usage">object-usage</h5>
+  <div class="example">
+    <div class="heading">"C:/folder" or "C:\folder"</div>
+    <div class="sample">
+      <p> file1.txt<br>file2.txt<br>file3.txt<br>
+      </p>
+    </div>
+    <div class="heading">Creating object:</div>
+    <div class="python_box">
+      <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+      <br><span id='o'>&gt&gt&gt</span> corp = tc.corpus(<span id='r'>"folder_path"</span>)
+    </div>
+    <br>
+    <!--
+    <div class="heading">Printing on console:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> doc
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+<br>
+    <div class="heading">Printing using function:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> <span id="g">print</span>(doc)
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+<br>
+    <div class="heading">Using in loop:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> <span id="g">for</span> i <span id="g">in</span> doc:<span id="g">print</span>(i)
+
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+<br>
+        <div class="heading">Accessing the variables:</div>
+
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.file_name
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> "file.txt"</p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.data
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> ['This is statement1.','This is statement2.','This is statement3.']
+          </p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.words
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> [['this', 'is', 'statement'],
+            <br>&nbsp['this', 'is', 'statement'],
+            <br>&nbsp['this', 'is', 'statement']]
+          </p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.token_it()
+              <br><span id='o'>&gt&gt&gt</span> doc.tokens
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> [['This', 'is', 'statement1', '.'],
+            <br>&nbsp['This', 'is', 'statement2', '.'],
+            <br>&nbsp['This', 'is', 'statement3', '.']]
+          </p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.count_sentences
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p>3</p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.count_words
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+            <p>9</p>
+        </div>
+<br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.each_word_count
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+              <p>{'is': 3, 'statement': 3, 'this': 3}</p>
+        </div>
+
+-->
+
+  </div>
+
+<br>
+
+  <h5 id="token_it">ii) document:</h5>
+  document class contains metadata of the file in variables. It has some well defined <b>default methods</b> and
+  it also has built-in functions listed below in the class structure.<br><br>
+  <div class="example">
+    <div class="heading">class structure</div>
+
+    <div class="sample" >
+      <p><span id='b'>class</span> document:
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='r'>&#35;class variables</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">file_name: <span id='o'>"&ltfile_name&gt"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">data = <span id='o'>"this variable contains data"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">words = <span id='o'>"list of words by lines"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">tokens = <span id='o'>"tokens will be generated after call of token_it"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">count_sentences = <span id='o'>"count of sentences"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">count_words = <span id='o'>"count of words"</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;">each_word_count = <span id='o'>"dictionary where key=word & value=count"</span></i>
+          <br>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='r'>&#35;class functions</span></i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> clear_blank_lines(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> lemming(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> lower_all(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> main_cleaner(self,op=<span id='r'>'sents'</span>,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> remove_numbers(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> remove_stpwrds(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> remove_symbols(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> stemming(self,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> strip_all(self,x=<span id='r'>'.\n'</span>,inplace=<span id='g'>False</span>)</i>
+          <br>&nbsp&nbsp&nbsp&nbsp<i style="font-size:16px;"><span id='b'>def</span> token_it(self)</i>
+      </p>
+    </div>
+  </div>
+  <br>Default methods are written to make class more accessible. These make the object user-friendly. Read the object-usage below.<br><br>
+  <h5 id="object_usage">object-usage</h5>
+  <div class="example">
+    <div class="heading">"file.txt"</div>
+    <div class="sample">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+    <div class="heading">Creating object:</div>
+    <div class="python_box">
+      <span id='o'>&gt&gt&gt</span> <span id='g'>import</span> <span id='b'>textcleaner</span> as <span id='b'>tc</span>
+      <br><span id='o'>&gt&gt&gt</span> doc = tc.document(<span id='r'>"file.txt"</span>)
+    </div>
+    <br>
+    <div class="heading">Printing on console:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> doc
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+  <br>
+    <div class="heading">Printing using function:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> <span id="g">print</span>(doc)
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+  <br>
+    <div class="heading">Using in loop:</div>
+    <div class="python_box" style="margin-bottom:0px;">
+      <span id='o'>&gt&gt&gt</span> <span id="g">for</span> i <span id="g">in</span> doc:<span id="g">print</span>(i)
+
+    </div>
+
+    <div class="output" style="margin-top:0px;">
+      <p> This is statement1.<br>This is statement2.<br>This is statement3.<br>
+      </p>
+    </div>
+  <br>
+        <div class="heading">Accessing the variables:</div>
+
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.file_name
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> "file.txt"</p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.data
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> ['This is statement1.','This is statement2.','This is statement3.']
+          </p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+          <span id='o'>&gt&gt&gt</span> doc.words
+
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> [['this', 'is', 'statement'],
+            <br>&nbsp['this', 'is', 'statement'],
+            <br>&nbsp['this', 'is', 'statement']]
+          </p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.token_it()
+              <br><span id='o'>&gt&gt&gt</span> doc.tokens
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p> [['This', 'is', 'statement1', '.'],
+            <br>&nbsp['This', 'is', 'statement2', '.'],
+            <br>&nbsp['This', 'is', 'statement3', '.']]
+          </p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.count_sentences
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+          <p>3</p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.count_words
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+            <p>9</p>
+        </div>
+  <br>
+        <div class="python_box" style="margin-bottom:0px;">
+              <span id='o'>&gt&gt&gt</span> doc.each_word_count
+        </div>
+
+        <div class="output" style="margin-top:0px;">
+              <p>{'is': 3, 'statement': 3, 'this': 3}</p>
+        </div>
+
+
+  </div>
+
+    </div>
+    </div>
+  <hr>
+
+
+    <div class="doc_content" id="updates">
+  <h4 style="display:inline-flex;"> Future updates</h4>
+  <ul class="future_updates">
+    <li>corpus class</li>
+    <li>TF-IDF</li>
+    <li>n-gram</li>
+    <li>BOW</li>
+    <li>words dictionary</li>
+    <li>rare words: extraction and removal</li>
+    <li>functions in C/C++</li>
+    <li>better website UI</li>
+  </ul>
+
+
+    </div>
+<hr>
+    <div class="doc_content" id="report">
+  <h4 style="display:inline-flex;"> How to report</h4> &nbsp<img src="cons.gif" alt="404" style="display:inline-flex;">
+       <h2 > Under Constructions</h2>
+
+    </div>
+  <hr>
+
+
+</div>
+
+</body>
+<script type="text/javascript"> new ClipboardJS('.copy'); </script>
+</html>

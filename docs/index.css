@@ -1,0 +1,336 @@
+#logo{
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+#header{
+  font-weight: 650;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  box-shadow: 1px 1px 2px 1px ;
+}
+
+.install{
+  height: 40px;
+  font-family: Source Code Pro,monospace;
+  background-color: rgba(0, 0, 100, 0.5);
+  color: white;
+  text-align: center;
+  width: 250px;
+  border-radius: 5px;
+  padding: 6px 0px;
+  font-weight: 600;
+  -webkit-box-shadow: inset 0px 1px 40px -1px rgba(95,102,94,1);
+  -moz-box-shadow: inset 0px 1px 40px -1px rgba(95,102,94,1);
+  box-shadow: inset 0px 1px 40px -1px rgba(95,102,94,1);
+}
+
+.motto{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.index{
+  padding-left: 50px;
+
+}
+
+.index a:hover {
+  text-decoration: none;
+}
+
+@keyframes btow {
+  from {background-color: white;}
+  to {background-color: #4f7bff;}
+}
+
+.index li{
+    cursor: pointer;
+    width: 32%;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: #4f7bff;
+    color: white;
+    padding: 10px 120px;
+    margin: 1px;
+    border: 1px solid #4f7bff;
+    animation-name: btow;
+    animation-duration: 0.3s;
+}
+
+@keyframes wtob {
+  from {background-color: #4f7bff;}
+  to {background-color: white;}
+}
+
+.index li:hover{
+    cursor: pointer;
+    width: 32%;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: white;
+    color: #4f7bff;
+    padding: 10px 120px;
+    margin: 1px;
+    border: 1px solid #4f7bff;
+    animation-name: wtob;
+    animation-duration: 0.2s;
+}
+
+.doc_content{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 350px;
+  font-size: 20px;
+}
+
+#bfunctions h5{
+  color: white;
+  width: inherit;
+  font-weight: bolder;
+  background-color: #4f7bff;
+  padding: 10px 10px;
+}
+
+.console{
+  background: black;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: rgba(255,255,255,0.8);
+  padding: 2px 20px;
+  font-family: arial, "lucida console", sans-serif;
+}
+
+.console:hover{
+  background: white;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: rgba(0,0,0,0.8);
+  padding: 2px 20px;
+  font-family: arial, "lucida console", sans-serif;
+  box-shadow: 0px 0px 5px 1px;
+}
+
+.copy{
+  padding-bottom: 8px;
+  height: 30px;
+  background-image: url('copy.png');
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.subindex{
+  padding-left: 50px;
+
+}
+
+.subindex a:hover{
+  text-decoration: none;
+}
+
+@keyframes btow {
+  from {background-color: white;}
+  to {background-color: #4f7bff;}
+}
+
+.subindex li{
+    cursor: pointer;
+    width: 32%;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: #4f7bff;
+    color: white;
+    padding: 8px 50px;
+    margin-bottom: 2px;
+    border: 1px solid #4f7bff;
+    animation-name: btow;
+    animation-duration: 0.3s;
+}
+
+@keyframes wtob {
+  from {background-color: #4f7bff;}
+  to {background-color: white;}
+}
+
+.subindex li:hover{
+    cursor: pointer;
+    width: 32%;
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: white;
+    color: #4f7bff;
+    padding: 8px 50px;
+    margin-bottom: 2px;
+    border: 1px solid #4f7bff;
+    animation-name: wtob;
+    animation-duration: 0.2s;
+}
+
+.python_box{
+  width: 100%;
+  color: rgb(50,50,50);
+  border: 1px solid rgb(201,201,201);
+  background-color: rgb(250,250,250);
+  box-shadow: 1px 1px 1px #d8d8d8;
+  padding: 10px;
+  line-height: 1.2em;
+  font-size: 1.1em;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#g{
+  color: rgb(0,150,0);
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+#r{
+  color: rgb(190,0,0);
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+#b{
+  color: rgb(0,0,190);
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+#o{
+  color: orange;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+.doc_content h4{
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.descript{
+  width: 100%;
+  color: rgb(50,50,50);
+  border: 1px solid rgb(201,201,201);
+  background-color: rgb(250,250,250);
+  box-shadow: 1px 1px 1px #d8d8d8;
+  padding: 10px;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.example{
+  background-color: rgb(240,240,240);
+  height: inherit;
+  padding: 10px;
+}
+
+.footnote{
+  padding: 0px 20px;
+  font-style: italic;
+}
+
+.heading{
+  display: block;
+  box-sizing: border-box;
+  font-weight: 600;
+  padding: 3px 10px;
+}
+
+.sample p{
+  margin: 0px;
+}
+.sample{
+  display: block;
+  box-sizing: border-box;
+  background-color: white;
+  font-weight: lighter;
+  font-family: 'Roboto Mono', monospace;
+  color: brown;
+  margin: 8px 10px;
+  padding: 0px 10px;
+}
+
+.output p{
+  margin: 0px;
+}
+
+.output{
+  display: block;
+  box-sizing: border-box;
+  background-color: white;
+  font-weight: lighter;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  margin: 8px 10px;
+  padding: 0px 10px;
+}
+
+.example .python_box{
+  margin: 8px 10px;
+  width: inherit;
+}
+
+.future_updates {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.future_updates li::before{
+  content: ' ';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 3px solid black;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+#bclasses h5{
+  color: white;
+  width: inherit;
+  font-weight: bolder;
+  background-color: #4f7bff;
+  padding: 10px 10px;
+}
+
+.example::before{
+  content: 'example';
+  color: grey;
+  display: inline-block;
+  border: 1px dashed grey;
+  padding: 0px 10px;
+  opacity: 0.5;
+  border-radius: 5px;
+}
