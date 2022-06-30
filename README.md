@@ -5,12 +5,7 @@
 
 ## What is it?
 
-**textcleaner** is Python package which provides utilities to pre-process texual data.
-
-
-Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
-Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
-Text-Cleaner is a utility library for text-data pre-processing. Use it before passing the text data to a model.
+**textcleaner** is a Python package which provides utilities to pre-process textual data.
 
 
 # Features!
@@ -31,6 +26,11 @@ Text-Cleaner is a utility library for text-data pre-processing. Use it before pa
 > rather than fine tunning the model and get better accuracy.
 > In that scenario this library can be useful and save you a tone
 > of time.
+
+### Links
+Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
+Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
+
 
 
 ### Tech
@@ -78,6 +78,8 @@ Above command will convert the text file into list of words with cleaning. Defau
 
  - more advanced features
  - ability to read more formats rather than only .txt
+
+
 
 License
 ----
