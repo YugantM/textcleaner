@@ -1,4 +1,12 @@
-# textcleaner V0.4.26 [![Downloads](https://static.pepy.tech/personalized-badge/textcleaner?period=total&units=international_system&left_color=blue&right_color=green&left_text=Downloads)](https://pepy.tech/project/textcleaner)
+# textcleaner: text pre-processing utility tool-kit
+
+[![Downloads](https://static.pepy.tech/personalized-badge/textcleaner?period=total&units=international_system&left_color=blue&right_color=green&left_text=Downloads)](https://pepy.tech/project/textcleaner)
+
+
+## What is it?
+
+**textcleaner** is Python package which provides utilities to pre-process texual data.
+
 
 Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
 Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
