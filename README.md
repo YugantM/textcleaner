@@ -6,6 +6,10 @@
 ## What is it?
 
 **textcleaner** is a Python package which provides utilities to pre-process textual data.
+> Tasks related to natural language processing include subtask of data pre-processing.
+> Sometimes these tasks can be really trivial that very huge amount of time is wasted on it.
+> In order to prevent this bottle-neck **textcleaner** is developed.
+> If you want to apply basic methodologies like clearing blanck lines or removing stopowrds from the text then this is the right fit for you.
 
 
 # Features!
@@ -18,15 +22,6 @@
   - tokenize the text-data on one call
   - stemming & lemmatization powered by NLTK
   
-
-> The goal is to make basic cleaning of data hassle free.
-> Most of the developers who are working with text data have 
-> faced this situation where data is not consumable
-> and they end up wasting their time on these issues
-> rather than fine tunning the model and get better accuracy.
-> In that scenario this library can be useful and save you a tone
-> of time.
-
 ### Links
 Pypi address: [hyperlink](https://pypi.org/project/textcleaner/) <br>
 Documentation: [hyperlink](https://yugantm.github.io/textcleaner/) <br>
